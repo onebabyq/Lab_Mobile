@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">1c</string>
+    <string name="login">LOGIN</string>
+    <string name="when_you_agree">When you agree to terms and conditions</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="or_login">Or login with</string>
+</resources>

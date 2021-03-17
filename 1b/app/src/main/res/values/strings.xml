@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">1b</string>
+    <string name="forget">FORGET \nPASSWORD</string>
+    <string name="provide">Provide for account\'s email for which you want to reset your password</string>
+    <string name="btn_next">NEXT</string>
+
+</resources>
