@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaiTapThuongKi">
         <activity android:name=".SigupActivity"></activity>
-        <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
