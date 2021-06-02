@@ -31,7 +31,7 @@ public class ShowInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_show_info);
 
         listProduct= new ArrayList<>();
-        adapter = new ProductAdapter(this,listProduct);
+        adapter = new ProductAdapter(ShowInfoActivity.this,listProduct);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         createUserList();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

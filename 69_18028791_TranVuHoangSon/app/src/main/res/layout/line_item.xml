@@ -15,12 +15,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:text="Country: US"
+        android:text="Country: "
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/txtType"
         app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+    <TextView
+        android:id="@+id/txtCountry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="US"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCountry"
+        app:layout_constraintTop_toTopOf="@+id/txtCountry"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtId"
@@ -44,26 +57,56 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
+        android:text="Type: "
         android:textColor="@color/black"
         android:textSize="14sp"
-        android:text="Type: Wood-Large"
         app:layout_constraintStart_toEndOf="@+id/txtId"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wood-Large"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtType"
+        app:layout_constraintTop_toTopOf="@+id/txtType" />
 
     <TextView
         android:id="@+id/txtPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Price: 55$"
+        android:text="Price: "
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/txtType"
         app:layout_constraintTop_toBottomOf="@+id/txtType" />
 
 
+    <TextView
+        android:id="@+id/txtPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="55"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toTopOf="@+id/txtPrice" />
+
+    <TextView
+        android:id="@+id/txtPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice2"
+        app:layout_constraintTop_toTopOf="@+id/txtPrice" />
+
     <android.widget.Button
-        android:id="@+id/btnUpdate"
+        android:id="@+id/btnUpdate2"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginEnd="20dp"
@@ -73,11 +116,11 @@
         android:text="Update"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/btnDelete"
+        android:id="@+id/btnDelete2"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginEnd="20dp"
