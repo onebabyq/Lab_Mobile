@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.69_18028791_TranVuHoangSon">
-        <activity android:name=".TrangChuActivity"></activity>
+        <activity android:name=".ShowInfoActivity"></activity>
+        <activity android:name=".ManagerActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                     else{
                         Toast.makeText(RegisterActivity.this, "Dang ky thanh cong", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RegisterActivity.this,TrangChuActivity.class));
+                        startActivity(new Intent(RegisterActivity.this,ManagerActivity.class));
                     }
                 }
             });
