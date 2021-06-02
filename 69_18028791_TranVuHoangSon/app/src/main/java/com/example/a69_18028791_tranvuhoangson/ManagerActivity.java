@@ -24,5 +24,12 @@ public class ManagerActivity extends AppCompatActivity {
                 startActivity(new Intent(ManagerActivity.this,ShowInfoActivity.class));
             }
         });
+
+        btnAddProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ManagerActivity.this,AddProductActivity.class));
+            }
+        });
     }
 }
