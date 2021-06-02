@@ -2,6 +2,7 @@ package com.example.a69_18028791_tranvuhoangson;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +33,12 @@ public class AddProductActivity extends AppCompatActivity {
         etCountryAdd = (EditText) findViewById(R.id.etCountryAdd);
         btnCreate = (Button) findViewById(R.id.btnCreate);
         btnBack2 = (Button) findViewById(R.id.btnBack2);
-
+        btnBack2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +46,7 @@ public class AddProductActivity extends AppCompatActivity {
                 String price = etPriceAdd.getText().toString();
                 String country = etCountryAdd.getText().toString();
                 PostApi(type,price,country);
+                startActivity(new Intent(AddProductActivity.this,ShowInfoActivity.class));
             }
         });
 

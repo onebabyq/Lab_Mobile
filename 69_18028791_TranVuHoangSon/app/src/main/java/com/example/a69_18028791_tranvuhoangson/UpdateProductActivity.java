@@ -37,6 +37,12 @@ public class UpdateProductActivity extends AppCompatActivity {
         etPriceUp = (EditText) findViewById(R.id.etPriceUp);
         etCountryUp = (EditText) findViewById(R.id.etCountryUp);
 
+        btnBack3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UpdateProductActivity.this,ShowInfoActivity.class));
+            }
+        });
         Intent intent = getIntent();
         id = intent.getIntExtra("key_id",0);
         String type = intent.getStringExtra("key_type");
@@ -56,6 +62,7 @@ public class UpdateProductActivity extends AppCompatActivity {
                 int price2=Integer.parseInt(etPriceUp.getText().toString());
 
                 PutApi(new Product(id,type2,price2,country2));
+                startActivity(new Intent(UpdateProductActivity.this,ShowInfoActivity.class));
             }
         });
     }
@@ -66,7 +73,7 @@ public class UpdateProductActivity extends AppCompatActivity {
                 Request.Method.PUT, url + '/' + id, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(UpdateProductActivity.this, product.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateProductActivity.this, "Update thanh cong", Toast.LENGTH_SHORT).show();
             }
         }, new Response.ErrorListener() {
             @Override
