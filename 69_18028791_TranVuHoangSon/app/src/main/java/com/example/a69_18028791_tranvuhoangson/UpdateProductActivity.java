@@ -2,6 +2,7 @@ package com.example.a69_18028791_tranvuhoangson;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,8 @@ public class UpdateProductActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_product);
+
+
         btnUpdate = (Button) findViewById(R.id.btnUpdate);
         btnBack3 = (Button) findViewById(R.id.btnBack3);
         etTypeUp = (EditText) findViewById(R.id.etTypeUp);

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,14 +25,16 @@ public class ShowInfoActivity extends AppCompatActivity {
     ArrayList<Product> listProduct;
     ProductAdapter adapter;
     RecyclerView recyclerView;
+    FragmentManager fragmentManager;
     Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_info);
 
+        fragmentManager = getFragmentManager();
         listProduct= new ArrayList<>();
-        adapter = new ProductAdapter(ShowInfoActivity.this,listProduct);
+        adapter = new ProductAdapter(ShowInfoActivity.this,listProduct,fragmentManager);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         createUserList();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

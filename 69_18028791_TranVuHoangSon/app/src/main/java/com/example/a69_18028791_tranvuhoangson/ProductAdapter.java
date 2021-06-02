@@ -1,15 +1,17 @@
 package com.example.a69_18028791_tranvuhoangson;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -17,12 +19,12 @@ import java.util.ArrayList;
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
     Context context;
     ArrayList<Product> listProduct;
-    EditText etName;
-    EditText etAge;
-    TextView txtIdHidden;
-    public ProductAdapter(Context context, ArrayList<Product> listProduct) {
+
+    FragmentManager fragmentManager;
+    public ProductAdapter(Context context, ArrayList<Product> listProduct, FragmentManager fragmentManager) {
         this.context = context;
         this.listProduct = listProduct;
+        this.fragmentManager = fragmentManager;
     }
 
     @NonNull
@@ -52,6 +54,16 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
                 intent.putExtra("key_price", product.getPrice());                 // Truyền một Boolean
                 intent.putExtra("key_country", product.getCountry());                 // Truyền một Boolean
                 context.startActivity(intent);
+            }
+        });
+        holder.btnDelete2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                DeleteFragment hello = new DeleteFragment(context,product.getId());
+                fragmentTransaction.add(R.id.listFragment,hello,"Hello");
+                fragmentTransaction.commit();
+
             }
         });
 
