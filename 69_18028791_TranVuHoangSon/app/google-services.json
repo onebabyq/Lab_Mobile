@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "41964930929",
+    "project_id": "thithuchanh-fbed0",
+    "storage_bucket": "thithuchanh-fbed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41964930929:android:6a2b6877bf419eb554d8d0",
+        "android_client_info": {
+          "package_name": "com.example.a69_18028791_tranvuhoangson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41964930929-n54kjs34hjbk8bmbg0i7jgfr1ldbj9ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmLYctuR5aX7T03B_j_BPgmslEs2J51Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41964930929-n54kjs34hjbk8bmbg0i7jgfr1ldbj9ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
