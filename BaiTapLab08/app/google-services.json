@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "257333262338",
+    "project_id": "baitaptuan08",
+    "storage_bucket": "baitaptuan08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257333262338:android:bdf706597e14368619cf1b",
+        "android_client_info": {
+          "package_name": "com.example.baitaplab08"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257333262338-f9h2h43nk3cosk4982fnen757av24e6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC-rz5-NkRO4V6JwShSkvuyZRJyMOBfuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257333262338-f9h2h43nk3cosk4982fnen757av24e6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
