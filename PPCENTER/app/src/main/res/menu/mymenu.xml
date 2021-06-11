@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item1"
+        android:title="Item1"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"
+        />
+    <item
+        android:id="@+id/itemTrangChu"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Trang Chủ"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/itemXuatBaoCao"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Xuất dữ liệu"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/itemNhapDuLieu"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Đổ dữ liệu vào"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/itemBaoCao"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Báo cáo"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/itemResetApp"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Xóa hết dữ liệu"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/itemDangXuat"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_lock_silent_mode"
+        android:title="Đăng xuất"
+        app:showAsAction="collapseActionView" />
+</menu>

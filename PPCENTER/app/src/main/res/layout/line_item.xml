@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_line_bg"
+    >
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtMaDonHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="210531000533"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtViTriTrang"
+        app:layout_constraintTop_toTopOf="@+id/txtViTriTrang" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtViTriTrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtTrangThai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã xuất "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtLoaiHoaDon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending cũ"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintStart_toEndOf="@+id/textView2aa2"
+        app:layout_constraintTop_toTopOf="@+id/textView2aa2" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2aa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại đơn:"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtMaDonHang"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaDonHang" />
+
+    <TextView
+        android:textColor="#81E6D6"
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

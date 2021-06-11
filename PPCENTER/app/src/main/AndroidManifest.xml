@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ppcenter">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ppapp">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PPCENTER">
+        android:theme="@style/Theme.PPAPP">
+        <activity android:name=".AddHoaDonActivity"></activity>
+        <activity android:name=".BaoCaoActivity" />
+        <activity android:name=".CapNhatActivity" />
+        <activity android:name=".ListHoaDonActivity" />
+        <activity android:name=".HoaDonActivity" />
+        <activity android:name=".TrangChuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

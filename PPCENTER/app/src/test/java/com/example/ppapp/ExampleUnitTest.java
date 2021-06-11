@@ -1,4 +1,4 @@
-package com.example.ppcenter;
+package com.example.ppapp;
 
 import org.junit.Test;
 
