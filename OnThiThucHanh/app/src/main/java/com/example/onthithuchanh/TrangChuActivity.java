@@ -186,3 +186,33 @@ public class TrangChuActivity extends AppCompatActivity {
     }
 
 }
+/*
+  RequestQueue requestQueue = Volley.newRequestQueue(this);
+        String url = "https://itunes.apple.com/search?term=michael+jackson";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                if (response != null) {
+                    int resultCount = response.optInt("resultCount");
+                    if (resultCount > 0) {
+                        Gson gson = new Gson();
+                        JSONArray jsonArray = response.optJSONArray("results");
+                        if (jsonArray != null) {
+                            SongInfo[] songs = gson.fromJson(jsonArray.toString(), SongInfo[].class);
+                            if (songs != null && songs.length > 0) {
+                                for (SongInfo song : songs) {
+                                    Log.i("LOG", song.trackViewUrl);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("LOG", error.toString());
+            }
+        });
+        requestQueue.add(jsonObjectRequest);
+*/
